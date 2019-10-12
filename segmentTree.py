@@ -1,3 +1,6 @@
+#Creating segment tree using python
+
+#creating node
 class Node:
     def __init__(self,start,end):
         self.start=start
@@ -44,6 +47,8 @@ class NumArray(object):
         return rangeSum(self.root,i,j)
 nums=[1,4,5,6,7,8]
 numArray=NumArray(nums)
+
+#Final outputs
 print(numArray.sumRange(0,1))
 print(numArray.sumRange(1,2))
 print(numArray.sumRange(4,5))
