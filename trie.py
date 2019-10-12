@@ -1,3 +1,6 @@
+#Building Trie using python
+
+#creating a node
 class TrieNode:
     def __init__(self):
         self.children=[None]*26
@@ -28,6 +31,8 @@ class Trie:
                 return False
             pCrawl=pCrawl.children[index]
         return pCrawl!=None and pCrawl.isEndOfWord
+
+#t-number of test cases
 t=int(input())
 for g in range(t):
     n=int(input())
